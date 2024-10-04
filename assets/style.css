@@ -1,0 +1,75 @@
+/* Base */
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Layout */
+.header {
+    height: 60px;
+    background-color: #f8f8f8;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+  
+.footer {
+    height: 40px;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 40px;
+    border-top: 1px solid #ddd;
+}
+  
+.main {
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Module */  
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+/* State */
+.button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #181818;
+}
+
+.button.is-active {
+    background-color: #333;
+}
+  
+/* Theme */
+.theme-dark .header {
+    background-color: #333;
+    color: white;
+}
+
+.theme-dark .footer {
+    background-color: #444;
+    color: white;
+}
